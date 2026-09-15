@@ -22,6 +22,9 @@ const el = {
 
 let state = null;
 let width = 660;
+let allSpecies = [];      // every species, never narrowed
+let rounds = 10;
+const seen = new Set();   // ids shown recently, so replays vary
 
 // ------------------------------------------------------------- screens
 
@@ -197,7 +200,24 @@ function showResults() {
 
 // ------------------------------------------------------------- game flow
 
+// Deal a new game. Replays are biased away from the animals recently shown,
+// but the pool they are drawn from is always the full list: narrowing the
+// list itself would leave it too small to deal five and five.
+function freshState() {
+  const half = Math.ceil(rounds / 2);
+  const unseenOn = side =>
+    allSpecies.filter(s => s.side === side && !seen.has(s.id)).length;
+  if (unseenOn('dog') < half || unseenOn('cat') < half) seen.clear();
+
+  const next = game.newState(allSpecies.filter(s => !seen.has(s.id)), rounds);
+  for (const slot of next.plan) seen.add(slot.species.id);
+  return next;
+}
+
 function startGame() {
+  // START on a finished game deals a new one rather than resuming the last
+  // round of the old one.
+  if (state.results.length >= rounds) state = freshState();
   state.screen = 'play';
   show('play');
   renderRound();
@@ -206,17 +226,18 @@ function startGame() {
 }
 
 function newGame() {
-  const all = state.all;
-  const seen = new Set(state.results.length ? state.plan.map(p => p.species.id) : []);
-  // Bias a replay away from the animals just shown, while keeping enough of
-  // each side to still deal five and five.
-  const fresh = ['dog', 'cat'].flatMap(side => {
-    const pool = all.filter(s => s.side === side);
-    const unseen = pool.filter(s => !seen.has(s.id));
-    return unseen.length >= state.rounds / 2 ? unseen : pool;
-  });
-  state = game.newState(fresh, state.rounds);
+  state = freshState();
   startGame();
+}
+
+// Leaving a game -- from the results screen or with Escape -- abandons it.
+// Without a fresh deal here, START would drop the player back into the game
+// they just walked away from.
+function toStart() {
+  state = freshState();
+  show('start');
+  fill(0);
+  fill(1);
 }
 
 // ------------------------------------------------------------- events
@@ -227,7 +248,7 @@ const ACTIONS = {
   cat: () => guess(game.CAT),
   next: () => advance(),
   again: () => newGame(),
-  home: () => show('start'),
+  home: () => toStart(),
   share: async () => {
     const copied = await shareResult(shareText(state));
     el.shareSaid.hidden = !copied;
@@ -251,7 +272,7 @@ document.addEventListener('keydown', event => {
       advance();
       break;
     case 'Escape':
-      if (state.screen === 'play') show('start');
+      if (state.screen !== 'start') toStart();
       break;
     default: return;
   }
@@ -261,8 +282,10 @@ document.addEventListener('keydown', event => {
 
 async function boot() {
   const data = await fetch('data/species.json').then(r => r.json());
-  state = game.newState(data.species, data.rounds);
+  allSpecies = data.species;
+  rounds = data.rounds;
   width = pickWidth(data.species[0].photo.widths);
+  state = freshState();
   // Deal and start downloading while the start page is still being read --
   // the same trick the desktop game plays.
   fill(0);

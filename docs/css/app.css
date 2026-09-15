@@ -123,11 +123,25 @@ body {
   /* The same 3:2 frame the desktop game uses, centred in whatever height is
      going spare, so the panel never towers over the photograph inside it. */
   aspect-ratio: 3 / 2;
+  position: relative;
   width: 100%;
   max-height: 100%;
   margin: auto;
 }
-#photo { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+#photo {
+  /* Positioned against the stage rather than sized as a percentage of it.
+     The stage's height comes from aspect-ratio, and a percentage height --
+     max-height included -- does not resolve against that, so it behaves as
+     auto: a portrait photograph then overflowed the frame and overflow:hidden
+     clipped it to a band. The striped skunk showed nothing but tail. Insets
+     resolve against the frame whether its height was specified or derived. */
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 #photo[hidden] { display: none; }
 .stage-msg { color: var(--muted); font-size: .9rem; margin: 0; padding: 1rem; text-align: center; }
 .stage.loading { animation: pulse 1.6s ease-in-out infinite; }
@@ -135,7 +149,10 @@ body {
 
 .credit {
   margin: 0;
-  min-height: 1.15rem;
+  /* Two lines are reserved whether or not the credit needs them: a long
+     photographer's name wraps, and the stage above must not resize when the
+     credit appears on reveal. */
+  min-height: 2.3rem;
   text-align: center;
   font-size: .72rem;
   line-height: 1.15rem;

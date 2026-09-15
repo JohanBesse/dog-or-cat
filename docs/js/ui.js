@@ -157,7 +157,20 @@ function advance() {
 
 // ------------------------------------------------------------- results
 
+const LAST_GAME = 'dogorcat:last-game';
+
+function rememberPlayed() {
+  // The credits page lists only the photographs you have been shown, so it
+  // needs to know which ones those were. Private browsing can refuse this,
+  // and the page copes with an empty list.
+  try {
+    const ids = state.plan.slice(0, state.results.length).map(s => s.species.id);
+    localStorage.setItem(LAST_GAME, JSON.stringify(ids));
+  } catch (err) { /* no storage, no credits list */ }
+}
+
 function showResults() {
+  rememberPlayed();
   const pct = game.percent(state);
   el.scoreLine.textContent = `${state.score} / ${state.rounds} correct  (${pct}%)`;
   el.bestStreak.textContent = `Best streak: ${state.bestStreak}`;

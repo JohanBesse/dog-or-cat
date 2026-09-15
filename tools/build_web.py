@@ -7,11 +7,12 @@ collects each photo's photographer and licence from Wikimedia, re-encodes the
 images at web sizes, and writes the generated half of docs/:
 
     docs/data/species.json      what the game loads
-    docs/photos/<hash>-660.webp the pictures
-    docs/credits.html           attribution, which the CC licences require
+    docs/photos/<hash>-660.webp the pictures, including credits thumbnails
     docs/assets/og-card.png     the link preview card
 
-The hand-written half of docs/ -- index.html, css/, js/ -- is never touched.
+The hand-written half of docs/ -- index.html, credits.html, css/, js/ -- is
+never touched. credits.html builds its list from species.json in the browser,
+so that it can show only the photographs the player has actually been shown.
 
 Photo filenames are hashes rather than species names on purpose: the src is
 visible in the DOM and in devtools, so "gray-wolf-660.webp" would give the
@@ -143,57 +144,6 @@ def encode(image, stem, width, formats):
 
 
 # ---------------------------------------------------------------- pages
-
-CREDITS_PAGE = """<!doctype html>
-<html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Photo credits — Dog or Cat?</title>
-<link rel="stylesheet" href="css/app.css">
-<body class="page">
-<main class="prose">
-<h1>Photo credits</h1>
-<p>Every photograph in <a href="/">Dog or Cat?</a> comes from Wikimedia
-Commons and is used under the licence shown beside it. Photographs are the
-work of their photographers, not of this site.</p>
-<ul class="credits">
-%s
-</ul>
-<p class="back"><a href="/">Back to the game</a></p>
-</main>
-</body>
-</html>
-"""
-
-CREDIT_ROW = """  <li>
-    <img src="%(thumb)s" width="%(w)d" height="%(h)d" alt="" loading="lazy">
-    <div><b>%(name)s</b><br>Photo by %(artist)s ·
-      %(licence)s ·
-      <a href="%(file_page)s">Wikimedia Commons</a></div>
-  </li>"""
-
-
-def write_credits(entries):
-    rows = []
-    for e in entries:
-        c = e["credit"]
-        # A public-domain file has no licence to link to, and inventing a
-        # link for it would say something the licence does not.
-        licence = html.escape(c["license"])
-        if c["license_url"]:
-            licence = ('<a href="%s" rel="license">%s</a>'
-                       % (html.escape(c["license_url"]), licence))
-        rows.append(CREDIT_ROW % {
-            "thumb": html.escape(e["photo"]["thumb"]),
-            "w": e["photo"]["thumb_width"],
-            "h": e["photo"]["thumb_height"],
-            "name": html.escape(e["name"]),
-            "artist": html.escape(c["artist"] or "an unnamed contributor"),
-            "licence": licence,
-            "file_page": html.escape(c["file_page"]),
-        })
-    (DOCS / "credits.html").write_text(CREDITS_PAGE % "\n".join(rows))
-
 
 def font(size, bold=True):
     for path in ("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
@@ -334,7 +284,6 @@ def build(refresh_meta=False, check_only=False):
     (DOCS / "data" / "species.json").write_text(
         json.dumps(payload, indent=1, ensure_ascii=False))
 
-    write_credits(entries)
     write_og_card(samples or [Image.new("RGB", (300, 250), "#1a1f2b")])
 
     stale = [p for p in PHOTO_DIR.iterdir() if p.name not in keep]

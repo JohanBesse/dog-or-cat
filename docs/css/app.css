@@ -45,7 +45,6 @@ body {
 }
 .tagline { margin: 0 0 1rem; color: var(--muted); font-size: .95rem; }
 .keyhint { color: var(--faint); font-size: .8rem; margin: .8rem 0 0; }
-.note { color: var(--faint); font-size: .78rem; margin: 1.4rem 0 0; max-width: 34rem; }
 
 .big-button {
   font: 700 1.4rem/1 var(--sans);
@@ -93,19 +92,6 @@ body {
 }
 .start-inner { max-width: 40rem; margin: auto; padding: 1.5rem 0; }
 .blurb { font-family: var(--serif); font-size: 1.05rem; text-align: left; margin: 0 0 1.4rem; }
-
-.branches { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin: 0 0 1.4rem; }
-.branch {
-  background: var(--panel);
-  border-radius: 12px;
-  padding: .9rem .6rem 1rem;
-  font-size: .82rem;
-  line-height: 1.45;
-}
-.branch b { display: block; font: 700 1.05rem/1.2 var(--serif); margin-bottom: .1rem; }
-.branch i { display: block; color: var(--muted); font-size: .75rem; margin-bottom: .5rem; }
-.branch-dog b { color: var(--dog); }
-.branch-cat b { color: var(--cat); }
 
 .start-button { margin-top: .4rem; }
 
@@ -226,8 +212,16 @@ body {
 .prose a { color: var(--ink); }
 .credits { list-style: none; margin: 2rem 0; padding: 0; }
 .credits li { display: flex; gap: 1rem; align-items: center; margin-bottom: 1.1rem; }
-.credits img { width: 110px; height: 74px; object-fit: cover;
-               border-radius: 8px; flex: none; }
+.credits img {
+  width: 110px; height: 74px; flex: none;
+  /* contain, not cover: the striped skunk is a tall photograph, and cropping
+     to the middle of it leaves nothing but tail. */
+  object-fit: contain;
+  background: var(--panel);
+  border-radius: 8px;
+}
+.muted-line { color: var(--muted); font-size: .85rem; }
+#show-all { font-size: .85rem; padding: .6rem 1rem; min-height: 0; }
 .credits div { font-size: .85rem; color: var(--muted); }
 .credits b { color: var(--ink); font-size: .95rem; }
 .credits a { color: var(--faint); }

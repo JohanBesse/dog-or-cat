@@ -1,0 +1,31 @@
+"""
+Better Commons photos than the ones Wikipedia leads with.
+
+`prop=pageimages` returns whatever image sits at the top of the article, and
+for a handful of species that picture is too small to fill the web layout --
+the African civet's is 500 pixels wide. Commons almost always holds a larger
+photo of the same animal, so those species are pinned to a file by hand here.
+
+Keys are Wikipedia article titles, exactly as they appear in SPECIES; values
+are Commons filenames without the "File:" prefix. Anything listed here skips
+the pageimages lookup and goes straight to imageinfo, so the licence and the
+photographer are still read from Commons rather than assumed.
+
+Every entry was looked at before being added. The build warns about any source
+narrower than 1280 px and refuses to ship one narrower than 660.
+"""
+
+OVERRIDES = {
+    # article lead is 500x?? -- a dark, cropped face
+    "African_civet":
+        "African civet, South Luangwa National Park (51866143791).jpg",
+    # article lead is 563x565
+    "Polar_bear":
+        "Polar Bear with its tongue sticking out.jpg",
+    # article lead is 576 wide, dark and behind wire
+    "Kinkajou":
+        "Selva verde lodge pm 4.18.25 DSC 3210-topaz-rawdenoise.jpg",
+    # article lead is 600 wide
+    "Sand_cat":
+        "Arabian Sand Cat - Felis Margarita.jpg",
+}

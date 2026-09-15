@@ -1,0 +1,2072 @@
+{
+ "generated": "2026-09-15T20:23:03Z",
+ "rounds": 10,
+ "count": 59,
+ "species": [
+  {
+   "id": "gray-wolf",
+   "name": "Gray wolf",
+   "side": "dog",
+   "family": "Canidae",
+   "fact": "Every domestic dog alive descends from an ancient population of these.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Gray_wolf",
+   "photo": {
+    "stem": "photos/9233829745",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 991,
+     "660": 511
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/9233829745-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 248
+   },
+   "credit": {
+    "artist": "User:Mas3cf",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mas3cf&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mas3cf (page does not exist)\">User:Mas3cf</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Eurasian_wolf_2.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Eurasian_wolf_2.jpg"
+   }
+  },
+  {
+   "id": "red-fox",
+   "name": "Red fox",
+   "side": "dog",
+   "family": "Canidae",
+   "fact": "Dives nose-first into snow after mice, and appears to line the jump up using Earth's magnetic field.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Red_fox",
+   "photo": {
+    "stem": "photos/00520b5039",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 848,
+     "660": 437
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/00520b5039-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 212
+   },
+   "credit": {
+    "artist": "ClaudiaTen",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:ClaudiaTen&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:ClaudiaTen (page does not exist)\">ClaudiaTen</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Portrait_of_a_red_fox_in_Rautas_fjällurskog_(cropped).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_(cropped).jpg"
+   }
+  },
+  {
+   "id": "fennec-fox",
+   "name": "Fennec fox",
+   "side": "dog",
+   "family": "Canidae",
+   "fact": "Ears up to 15 cm long, the largest of any canid relative to body size, and they work as radiators.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Fennec_fox",
+   "photo": {
+    "stem": "photos/fb5d4367a5",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 992,
+     "660": 512
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/fb5d4367a5-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 248
+   },
+   "credit": {
+    "artist": "Drew Avery",
+    "artist_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/33590535@N06\">Drew Avery</a>",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": true,
+    "file_name": "Fennec_Fox_Vulpes_zerda.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Fennec_Fox_Vulpes_zerda.jpg"
+   }
+  },
+  {
+   "id": "arctic-fox",
+   "name": "Arctic fox",
+   "side": "dog",
+   "family": "Canidae",
+   "fact": "The warmest coat of any mammal. It does not start shivering until about -70 C.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Arctic_fox",
+   "photo": {
+    "stem": "photos/533dc97161",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1583,
+     "660": 816
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/533dc97161-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 396
+   },
+   "credit": {
+    "artist": "Jonatan Pie ( unsplash.com/@r3dmax )",
+    "artist_html": "Jonatan Pie (<span class=\"url\"><a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@r3dmax\">unsplash.com/@r3dmax</a></span>)",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "attribution_required": false,
+    "file_name": "Vulpes_lagopus_in_Iceland_(cropped_3).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Vulpes_lagopus_in_Iceland_(cropped_3).jpg"
+   }
+  },
+  {
+   "id": "african-wild-dog",
+   "name": "African wild dog",
+   "side": "dog",
+   "family": "Canidae",
+   "fact": "Packs decide when to set off hunting by sneezing. Enough sneezes and the vote carries.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/African_wild_dog",
+   "photo": {
+    "stem": "photos/47ad69f25a",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 720,
+     "660": 371
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/47ad69f25a-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 180
+   },
+   "credit": {
+    "artist": "AfricanConservation",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:AfricanConservation&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:AfricanConservation (page does not exist)\">AfricanConservation</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "African_Wild_Dog_at_Working_with_Wildlife.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:African_Wild_Dog_at_Working_with_Wildlife.jpg"
+   }
+  },
+  {
+   "id": "bat-eared-fox",
+   "name": "Bat-eared fox",
+   "side": "dog",
+   "family": "Canidae",
+   "fact": "Listens for termites underground and has up to 50 teeth, more than any other placental land mammal.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Bat-eared_fox",
+   "photo": {
+    "stem": "photos/309a359cf1",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/309a359cf1-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Yathin S Krishnappa",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Yathin_sk\" title=\"User:Yathin sk\">Yathin S Krishnappa</a>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "Otocyon_megalotis_-_Etosha_2014.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Otocyon_megalotis_-_Etosha_2014.jpg"
+   }
+  },
+  {
+   "id": "dhole",
+   "name": "Dhole",
+   "side": "dog",
+   "family": "Canidae",
+   "fact": "An Asian wild dog that whistles to keep the pack together.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Dhole",
+   "photo": {
+    "stem": "photos/64ec323c13",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1189,
+     "660": 613
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/64ec323c13-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 297
+   },
+   "credit": {
+    "artist": "Davidvraju",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Davidvraju\" title=\"User:Davidvraju\">Davidvraju</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Dhole_(Asiatic_wild_dog)_cropped.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Dhole_(Asiatic_wild_dog)_cropped.jpg"
+   }
+  },
+  {
+   "id": "maned-wolf",
+   "name": "Maned wolf",
+   "side": "dog",
+   "family": "Canidae",
+   "fact": "Not a wolf and not a fox, but a long-legged canid all of its own. Its urine smells strongly of cannabis.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Maned_wolf",
+   "photo": {
+    "stem": "photos/352da9ee57",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 828,
+     "660": 427
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/352da9ee57-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 207
+   },
+   "credit": {
+    "artist": "Jonathan Wilkins",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jonathan_Wilkins&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jonathan Wilkins (page does not exist)\">Jonathan Wilkins</a>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "Lobo_Guará_andando.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Lobo_Guar%C3%A1_andando.jpg"
+   }
+  },
+  {
+   "id": "raccoon-dog",
+   "name": "Raccoon dog",
+   "side": "dog",
+   "family": "Canidae",
+   "fact": "A true canid wearing a raccoon's face. The only one that climbs trees and sleeps through the winter.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Raccoon_dog",
+   "photo": {
+    "stem": "photos/49ae8e6e2f",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1870,
+     "660": 964
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/49ae8e6e2f-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 468
+   },
+   "credit": {
+    "artist": "Доктор рукиноги KKPCW",
+    "artist_html": "<ul><li><a href=\"//commons.wikimedia.org/wiki/User:%D0%94%D0%BE%D0%BA%D1%82%D0%BE%D1%80_%D1%80%D1%83%D0%BA%D0%B8%D0%BD%D0%BE%D0%B3%D0%B8\" title=\"User:Доктор рукиноги\">Доктор рукиноги</a></li>\n<li><a href=\"//commons.wikimedia.org/wiki/User:KKPCW\" title=\"User:KKPCW\">KKPCW</a></li></ul>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Nyctereutes.png",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Nyctereutes.png"
+   }
+  },
+  {
+   "id": "brown-bear",
+   "name": "Brown bear",
+   "side": "dog",
+   "family": "Ursidae",
+   "fact": "Bears sit on the dog-like branch of Carnivora, closest to seals and weasels.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Brown_bear",
+   "photo": {
+    "stem": "photos/695344a558",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/695344a558-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Yathin S Krishnappa",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Yathin_sk\" title=\"User:Yathin sk\">Yathin S Krishnappa</a>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "2010-kodiak-bear-1.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:2010-kodiak-bear-1.jpg"
+   }
+  },
+  {
+   "id": "polar-bear",
+   "name": "Polar bear",
+   "side": "dog",
+   "family": "Ursidae",
+   "fact": "The fur is transparent rather than white, and the skin underneath is black.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Polar_bear",
+   "photo": {
+    "stem": "photos/da9080461d",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 854,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/da9080461d-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 214
+   },
+   "credit": {
+    "artist": "Christopher Michel",
+    "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Christopher_Michel\" class=\"extiw\" title=\"w:en:Christopher Michel\"><span title=\"American entrepreneur, photographer, and investor\">Christopher Michel</span></a></bdi>",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": true,
+    "file_name": "Polar Bear with its tongue sticking out.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Polar_Bear_with_its_tongue_sticking_out.jpg"
+   }
+  },
+  {
+   "id": "giant-panda",
+   "name": "Giant panda",
+   "side": "dog",
+   "family": "Ursidae",
+   "fact": "A bear running a 99% bamboo diet on a carnivore's gut, which is why it must eat up to 38 kg of it a day.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Giant_panda",
+   "photo": {
+    "stem": "photos/175511d819",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/175511d819-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "J. Patrick Fischer",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:J._Patrick_Fischer\" title=\"User:J. Patrick Fischer\">J. Patrick Fischer</a>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "Grosser_Panda.JPG",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG"
+   }
+  },
+  {
+   "id": "sun-bear",
+   "name": "Sun bear",
+   "side": "dog",
+   "family": "Ursidae",
+   "fact": "The smallest bear, with a 25 cm tongue for emptying honeycombs and termite nests.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Sun_bear",
+   "photo": {
+    "stem": "photos/18852e779c",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 854,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/18852e779c-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 214
+   },
+   "credit": {
+    "artist": "Rushenb",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Rushenb\" title=\"User:Rushenb\">Rushenb</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Sun-bear.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Sun-bear.jpg"
+   }
+  },
+  {
+   "id": "sloth-bear",
+   "name": "Sloth bear",
+   "side": "dog",
+   "family": "Ursidae",
+   "fact": "Missing its two upper front teeth, leaving a gap it uses to vacuum termites out of their mounds.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Sloth_bear",
+   "photo": {
+    "stem": "photos/c403616792",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 947,
+     "660": 488
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/c403616792-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 237
+   },
+   "credit": {
+    "artist": "Asiir",
+    "artist_html": "Asiir",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution_required": false,
+    "file_name": "Sloth_Bear_Washington_DC.JPG",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Sloth_Bear_Washington_DC.JPG"
+   }
+  },
+  {
+   "id": "wolverine",
+   "name": "Wolverine",
+   "side": "dog",
+   "family": "Mustelidae",
+   "fact": "A 15 kg weasel with the confidence to drive bears off a carcass.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Wolverine",
+   "photo": {
+    "stem": "photos/d380619b83",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 800,
+     "660": 412
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/d380619b83-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 200
+   },
+   "credit": {
+    "artist": "Esquilo",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Esquilo\" title=\"User:Esquilo\">Esquilo</a>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "Järv1.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:J%C3%A4rv1.jpg"
+   }
+  },
+  {
+   "id": "sea-otter",
+   "name": "Sea otter",
+   "side": "dog",
+   "family": "Mustelidae",
+   "fact": "The densest fur of any animal, up to a million hairs per square inch, and it holds hands while sleeping.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Sea_otter",
+   "photo": {
+    "stem": "photos/ffa9d13597",
+    "widths": [
+     660,
+     922
+    ],
+    "height": {
+     "922": 843,
+     "660": 603
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/ffa9d13597-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 293
+   },
+   "credit": {
+    "artist": "Marshal Hedin from San Diego",
+    "artist_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/23660854@N07\">Marshal Hedin</a> from San Diego",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "attribution_required": true,
+    "file_name": "Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg"
+   }
+  },
+  {
+   "id": "honey-badger",
+   "name": "Honey badger",
+   "side": "dog",
+   "family": "Mustelidae",
+   "fact": "Loose rubbery skin lets it rotate inside its own hide and bite whatever has it by the neck.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Honey_badger",
+   "photo": {
+    "stem": "photos/33fba6e298",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 720,
+     "660": 371
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/33fba6e298-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 180
+   },
+   "credit": {
+    "artist": "Sumeet Moghe",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Sumeetmoghe&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Sumeetmoghe (page does not exist)\">Sumeet Moghe</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Honey_Badger.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Honey_Badger.jpg"
+   }
+  },
+  {
+   "id": "european-badger",
+   "name": "European badger",
+   "side": "dog",
+   "family": "Mustelidae",
+   "fact": "Digs setts that stay in use by generation after generation for over a century.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/European_badger",
+   "photo": {
+    "stem": "photos/db03acf58a",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/db03acf58a-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Charles J. Sharp",
+    "artist_html": "<bdi><a href=\"https://www.wikidata.org/wiki/Q54800218\" class=\"extiw\" title=\"d:Q54800218\"><span title=\"Scottish wildlife photographer\">Charles J. Sharp</span></a></bdi>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "European_badger_(Meles_meles_taxus)_Drenthe.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:European_badger_(Meles_meles_taxus)_Drenthe.jpg"
+   }
+  },
+  {
+   "id": "stoat",
+   "name": "Stoat",
+   "side": "dog",
+   "family": "Mustelidae",
+   "fact": "Turns white in winter, at which point the coat gets sold as ermine.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Stoat",
+   "photo": {
+    "stem": "photos/abd5acc6f6",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 960,
+     "660": 495
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/abd5acc6f6-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 240
+   },
+   "credit": {
+    "artist": "Marton Berntsen , crop by User:MPF",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Marton_Berntsen&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Marton Berntsen (page does not exist)\">Marton Berntsen</a>, crop by <a href=\"//commons.wikimedia.org/wiki/User:MPF\" title=\"User:MPF\">User:MPF</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Røyskatt_(Mustela_erminea_erminea),_Lista,_Norway.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:R%C3%B8yskatt_(Mustela_erminea_erminea),_Lista,_Norway.jpg"
+   }
+  },
+  {
+   "id": "eurasian-otter",
+   "name": "Eurasian otter",
+   "side": "dog",
+   "family": "Mustelidae",
+   "fact": "Otters are aquatic weasels, and weasels are firmly on the dog-like branch.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Eurasian_otter",
+   "photo": {
+    "stem": "photos/7ca5b7c36b",
+    "widths": [
+     660,
+     908
+    ],
+    "height": {
+     "908": 497,
+     "660": 361
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/7ca5b7c36b-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 175
+   },
+   "credit": {
+    "artist": "Bernard Landgraf",
+    "artist_html": "Bernard Landgraf",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution_required": true,
+    "file_name": "Fischotter,_Lutra_Lutra.JPG",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Fischotter,_Lutra_Lutra.JPG"
+   }
+  },
+  {
+   "id": "pine-marten",
+   "name": "Pine marten",
+   "side": "dog",
+   "family": "Mustelidae",
+   "fact": "Cat-shaped, cat-sized, cat-agile, and a mustelid.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Pine_marten",
+   "photo": {
+    "stem": "photos/377c2ce8a4",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 789,
+     "660": 407
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/377c2ce8a4-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 197
+   },
+   "credit": {
+    "artist": "caroline legg",
+    "artist_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/128941223@N02\">caroline legg</a>",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": true,
+    "file_name": "Pine_Marten_(48173751702).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Pine_Marten_(48173751702).jpg"
+   }
+  },
+  {
+   "id": "raccoon",
+   "name": "Raccoon",
+   "side": "dog",
+   "family": "Procyonidae",
+   "fact": "Its front paws carry four times the touch receptors of the hind ones. It largely sees by feel.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Raccoon",
+   "photo": {
+    "stem": "photos/a35a47d730",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1002,
+     "660": 517
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/a35a47d730-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 250
+   },
+   "credit": {
+    "artist": "Rhododendrites",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Rhododendrites\" title=\"User:Rhododendrites\">Rhododendrites</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Raccoon_in_Central_Park_(35264).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Raccoon_in_Central_Park_(35264).jpg"
+   }
+  },
+  {
+   "id": "kinkajou",
+   "name": "Kinkajou",
+   "side": "dog",
+   "family": "Procyonidae",
+   "fact": "A carnivoran that mostly eats fruit, hangs by a prehensile tail, and pollinates flowers with a 13 cm tongue.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Kinkajou",
+   "photo": {
+    "stem": "photos/c72b3222e9",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1024,
+     "660": 528
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/c72b3222e9-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 256
+   },
+   "credit": {
+    "artist": "lwolfartist",
+    "artist_html": "lwolfartist",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": true,
+    "file_name": "Selva verde lodge pm 4.18.25 DSC 3210-topaz-rawdenoise.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Selva_verde_lodge_pm_4.18.25_DSC_3210-topaz-rawdenoise.jpg"
+   }
+  },
+  {
+   "id": "south-american-coati",
+   "name": "South American coati",
+   "side": "dog",
+   "family": "Procyonidae",
+   "fact": "Females and young roam in bands of up to 30 while adult males live alone.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/South_American_coati",
+   "photo": {
+    "stem": "photos/62f1ae501b",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1253,
+     "660": 646
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/62f1ae501b-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 313
+   },
+   "credit": {
+    "artist": "Rufus46",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Rufus46\" title=\"User:Rufus46\">Rufus46</a>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "Nasenbaer_Nasua_nasua_Zoo_Augsburg-04.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Nasenbaer_Nasua_nasua_Zoo_Augsburg-04.jpg"
+   }
+  },
+  {
+   "id": "ringtail",
+   "name": "Ringtail",
+   "side": "dog",
+   "family": "Procyonidae",
+   "fact": "Nicknamed the miner's cat and the ring-tailed cat. It is a raccoon relative and no kind of cat.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Ring-tailed_cat",
+   "photo": {
+    "stem": "photos/54c172d9d4",
+    "widths": [
+     660,
+     753
+    ],
+    "height": {
+     "753": 500,
+     "660": 438
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/54c172d9d4-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 212
+   },
+   "credit": {
+    "artist": "Robertbody at en.wikipedia",
+    "artist_html": "<a href=\"https://en.wikipedia.org/wiki/User:Robertbody\" class=\"extiw\" title=\"en:User:Robertbody\">Robertbody</a> at <a class=\"external text\" data-mw-original-href=\"http://en.wikipedia.org\" href=\"https://en.wikipedia.org\">en.wikipedia</a>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "Squaw-ringtail-28073.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Squaw-ringtail-28073.jpg"
+   }
+  },
+  {
+   "id": "striped-skunk",
+   "name": "Striped skunk",
+   "side": "dog",
+   "family": "Mephitidae",
+   "fact": "Sprays accurately to about 3 metres, but stamps its front feet in warning first.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Striped_skunk",
+   "photo": {
+    "stem": "photos/5b71324b8b",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1559,
+     "660": 804
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/5b71324b8b-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 390
+   },
+   "credit": {
+    "artist": "Wallace Keck",
+    "artist_html": "Wallace Keck",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution_required": false,
+    "file_name": "Skunk_about_to_spray.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Skunk_about_to_spray.jpg"
+   }
+  },
+  {
+   "id": "red-panda",
+   "name": "Red panda",
+   "side": "dog",
+   "family": "Ailuridae",
+   "fact": "Not a bear, not a raccoon, and not related to the giant panda. The only living member of its family, and it sits on the dog-like branch.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Red_panda",
+   "photo": {
+    "stem": "photos/b837830565",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/b837830565-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Sunuwargr",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Sunuwargr\" title=\"User:Sunuwargr\">Sunuwargr</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Red_Panda,_Gentle_Tree-Dweller_of_the_Himalayas.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Red_Panda,_Gentle_Tree-Dweller_of_the_Himalayas.jpg"
+   }
+  },
+  {
+   "id": "harbour-seal",
+   "name": "Harbour seal",
+   "side": "dog",
+   "family": "Phocidae",
+   "fact": "Its whiskers can follow the wake a fish left behind up to 30 seconds earlier.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Harbor_seal",
+   "photo": {
+    "stem": "photos/0002bf7d65",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/0002bf7d65-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Charles J. Sharp",
+    "artist_html": "<bdi><a href=\"https://www.wikidata.org/wiki/Q54800218\" class=\"extiw\" title=\"d:Q54800218\"><span title=\"Scottish wildlife photographer\">Charles J. Sharp</span></a></bdi>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Common_seal_(Phoca_vitulina)_2.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Common_seal_(Phoca_vitulina)_2.jpg"
+   }
+  },
+  {
+   "id": "leopard-seal",
+   "name": "Leopard seal",
+   "side": "dog",
+   "family": "Phocidae",
+   "fact": "Named for a cat, related to weasels and bears. It sings underwater for hours at a time.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Leopard_seal",
+   "photo": {
+    "stem": "photos/9c315f880f",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/9c315f880f-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Godot13",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Godot13\" title=\"User:Godot13\">Godot13</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Antarctic_Sound-2016-Brown_Bluff–Leopard_seal_(Hydrurga_leptonyx)_04.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Antarctic_Sound-2016-Brown_Bluff%E2%80%93Leopard_seal_(Hydrurga_leptonyx)_04.jpg"
+   }
+  },
+  {
+   "id": "northern-elephant-seal",
+   "name": "Northern elephant seal",
+   "side": "dog",
+   "family": "Phocidae",
+   "fact": "Dives to 1,500 m and can stay under for nearly two hours.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Northern_elephant_seal",
+   "photo": {
+    "stem": "photos/5c24bcc8b0",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1024,
+     "660": 528
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/5c24bcc8b0-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 256
+   },
+   "credit": {
+    "artist": "Mike Baird",
+    "artist_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/72825507@N00\">Mike Baird</a>",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": true,
+    "file_name": "Mating_scene_with_elevated_Alpha_Male._Elephant_Seals_of_Piedras_Blancas.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Mating_scene_with_elevated_Alpha_Male._Elephant_Seals_of_Piedras_Blancas.jpg"
+   }
+  },
+  {
+   "id": "california-sea-lion",
+   "name": "California sea lion",
+   "side": "dog",
+   "family": "Otariidae",
+   "fact": "Unlike true seals it can swing its hind flippers forward and gallop on land.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/California_sea_lion",
+   "photo": {
+    "stem": "photos/f93a5eb88d",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/f93a5eb88d-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "(c) Jonathan Eisen, some rights reserved (CC BY)",
+    "artist_html": "(c) Jonathan Eisen, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution_required": true,
+    "file_name": "California_Sea_Lion,_Monterey,_California,_United_States_imported_from_iNaturalist_photo_203598492.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:California_Sea_Lion,_Monterey,_California,_United_States_imported_from_iNaturalist_photo_203598492.jpg"
+   }
+  },
+  {
+   "id": "walrus",
+   "name": "Walrus",
+   "side": "dog",
+   "family": "Odobenidae",
+   "fact": "Those tusks are canine teeth up to a metre long, used to haul two tonnes of walrus onto the ice.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Walrus",
+   "photo": {
+    "stem": "photos/c49bf13644",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/c49bf13644-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Nixette",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nixette&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nixette (page does not exist)\">Nixette</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg"
+   }
+  },
+  {
+   "id": "lion",
+   "name": "Lion",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "The only cat that lives in groups. The roar carries about 8 km.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Lion",
+   "photo": {
+    "stem": "photos/304eed2af9",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 854,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/304eed2af9-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 214
+   },
+   "credit": {
+    "artist": "Giles Laurent",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Giles_Laurent\" title=\"User:Giles Laurent\">Giles Laurent</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+   }
+  },
+  {
+   "id": "tiger",
+   "name": "Tiger",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "The stripes are on the skin as well as the fur. Shave one and the pattern is still there.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Tiger",
+   "photo": {
+    "stem": "photos/6d93e1603e",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/6d93e1603e-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Charles J. Sharp",
+    "artist_html": "<bdi><a href=\"https://www.wikidata.org/wiki/Q54800218\" class=\"extiw\" title=\"d:Q54800218\"><span title=\"Scottish wildlife photographer\">Charles J. Sharp</span></a></bdi>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg"
+   }
+  },
+  {
+   "id": "cheetah",
+   "name": "Cheetah",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "Semi-retractable claws act as sprint spikes. Nought to 100 km/h in about three seconds.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Cheetah",
+   "photo": {
+    "stem": "photos/c1c90dca31",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/c1c90dca31-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "AfricanConservation",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:AfricanConservation&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:AfricanConservation (page does not exist)\">AfricanConservation</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Male_cheetah_facing_left_in_South_Africa.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Male_cheetah_facing_left_in_South_Africa.jpg"
+   }
+  },
+  {
+   "id": "snow-leopard",
+   "name": "Snow leopard",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "Cannot roar, and uses its metre-long tail as a blanket.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Snow_leopard",
+   "photo": {
+    "stem": "photos/7f134a666c",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 960,
+     "660": 495
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/7f134a666c-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 240
+   },
+   "credit": {
+    "artist": "Irbis1983",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Irbis1983&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Irbis1983 (page does not exist)\">Irbis1983</a>",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution_required": false,
+    "file_name": "Irbis4.JPG",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Irbis4.JPG"
+   }
+  },
+  {
+   "id": "jaguar",
+   "name": "Jaguar",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "The strongest bite of any big cat for its size. It kills by punching through the skull.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Jaguar",
+   "photo": {
+    "stem": "photos/814a31a3ca",
+    "widths": [
+     660,
+     727
+    ],
+    "height": {
+     "727": 501,
+     "660": 455
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/814a31a3ca-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 221
+   },
+   "credit": {
+    "artist": "USFWS",
+    "artist_html": "USFWS",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution_required": false,
+    "file_name": "Standing_jaguar.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Standing_jaguar.jpg"
+   }
+  },
+  {
+   "id": "serval",
+   "name": "Serval",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "The longest legs of any cat relative to its body, and it leaps 3 m to pluck birds out of the air.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Serval",
+   "photo": {
+    "stem": "photos/9f27e48bbf",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1273,
+     "660": 656
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/9f27e48bbf-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 318
+   },
+   "credit": {
+    "artist": "Diego Delso",
+    "artist_html": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Servalcropped.png",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Servalcropped.png"
+   }
+  },
+  {
+   "id": "caracal",
+   "name": "Caracal",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "Twenty muscles in each tufted ear, and it knocks birds down mid-leap.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Caracal",
+   "photo": {
+    "stem": "photos/f9c40e3a32",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1585,
+     "660": 817
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/f9c40e3a32-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 396
+   },
+   "credit": {
+    "artist": "Derek Keats",
+    "artist_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/93242958@N00\">Derek Keats</a>",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": true,
+    "file_name": "Caracal_on_the_road,_early_morning_in_Kgalagadi_(36173878220)_(cropped).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Caracal_on_the_road,_early_morning_in_Kgalagadi_(36173878220)_(cropped).jpg"
+   }
+  },
+  {
+   "id": "sand-cat",
+   "name": "Sand cat",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "Fur-covered foot pads let it cross 60 C sand, and it never needs to drink.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Sand_cat",
+   "photo": {
+    "stem": "photos/03b9033ab4",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/03b9033ab4-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Ranjith-chemmad",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Ranjith-chemmad\" title=\"User:Ranjith-chemmad\">Ranjith-chemmad</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Arabian Sand Cat - Felis Margarita.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Arabian_Sand_Cat_-_Felis_Margarita.jpg"
+   }
+  },
+  {
+   "id": "clouded-leopard",
+   "name": "Clouded leopard",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "Canines as long as a tiger's relative to its skull, and it can climb down a trunk head-first.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Clouded_leopard",
+   "photo": {
+    "stem": "photos/d62989bcd6",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/d62989bcd6-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Rushenb",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Rushenb\" title=\"User:Rushenb\">Rushenb</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Neofelis_nebulosa,_Clouded_leopard.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Neofelis_nebulosa,_Clouded_leopard.jpg"
+   }
+  },
+  {
+   "id": "black-footed-cat",
+   "name": "Black-footed cat",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "Africa's smallest cat and its deadliest. Roughly 60% of its hunts succeed.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Black-footed_cat",
+   "photo": {
+    "stem": "photos/71a85d5853",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1933,
+     "660": 997
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/71a85d5853-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 483
+   },
+   "credit": {
+    "artist": "Patrick Ch. Apfeld , derivative editing by Poke2001",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Pehah\" title=\"User:Pehah\">Patrick Ch. Apfeld</a>, derivative editing by <a href=\"//commons.wikimedia.org/wiki/User:Poke2001\" title=\"User:Poke2001\">Poke2001</a>",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "attribution_required": true,
+    "file_name": "Zoo_Wuppertal_Schwarzfusskatze.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Zoo_Wuppertal_Schwarzfusskatze.jpg"
+   }
+  },
+  {
+   "id": "ocelot",
+   "name": "Ocelot",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "A cat that swims willingly, which most of the family will not.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Ocelot",
+   "photo": {
+    "stem": "photos/58e6cdaf8b",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/58e6cdaf8b-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Giles Laurent",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Giles_Laurent\" title=\"User:Giles Laurent\">Giles Laurent</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "016_Ocelot_in_Encontro_das_Águas_State_Park_Photo_by_Giles_Laurent.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:016_Ocelot_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg"
+   }
+  },
+  {
+   "id": "eurasian-lynx",
+   "name": "Eurasian lynx",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "Europe's third largest predator, and the ear tufts work as hearing aids.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Eurasian_lynx",
+   "photo": {
+    "stem": "photos/f130c69b8a",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 857,
+     "660": 442
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/f130c69b8a-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 214
+   },
+   "credit": {
+    "artist": "Aconcagua ( talk )",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Aconcagua\" title=\"User:Aconcagua\">Aconcagua</a> (<a href=\"//commons.wikimedia.org/wiki/User_talk:Aconcagua\" title=\"User talk:Aconcagua\"><span class=\"signature-talk\">talk</span></a>)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "Lynx_Nationalpark_Bayerischer_Wald_01.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Lynx_Nationalpark_Bayerischer_Wald_01.jpg"
+   }
+  },
+  {
+   "id": "cougar",
+   "name": "Cougar",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "Cannot roar but purrs like a house cat, and holds the record for the most names of any animal.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Cougar",
+   "photo": {
+    "stem": "photos/dd51fbbd4d",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/dd51fbbd4d-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "National Park Service",
+    "artist_html": "National Park Service",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution_required": false,
+    "file_name": "Mountain_Lion_in_Glacier_National_Park.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Mountain_Lion_in_Glacier_National_Park.jpg"
+   }
+  },
+  {
+   "id": "fishing-cat",
+   "name": "Fishing cat",
+   "side": "cat",
+   "family": "Felidae",
+   "fact": "Taps the water surface to imitate insects, then dives in after the fish that come to look.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Fishing_cat",
+   "photo": {
+    "stem": "photos/6a8cc65df0",
+    "widths": [
+     660,
+     800
+    ],
+    "height": {
+     "800": 533,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/6a8cc65df0-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "Kelinahandbasket",
+    "artist_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/kellinahandbasket/\">Kelinahandbasket</a>",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": true,
+    "file_name": "Prionailurus_viverrinus_01.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Prionailurus_viverrinus_01.jpg"
+   }
+  },
+  {
+   "id": "spotted-hyena",
+   "name": "Spotted hyena",
+   "side": "cat",
+   "family": "Hyaenidae",
+   "fact": "Far closer to cats than to dogs. Clans are run by females, and every female outranks every male.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Spotted_hyena",
+   "photo": {
+    "stem": "photos/2222fb6ac4",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 687,
+     "660": 354
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/2222fb6ac4-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 172
+   },
+   "credit": {
+    "artist": "Charles J. Sharp",
+    "artist_html": "<bdi><a href=\"https://www.wikidata.org/wiki/Q54800218\" class=\"extiw\" title=\"d:Q54800218\"><span title=\"Scottish wildlife photographer\">Charles J. Sharp</span></a></bdi>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Spotted_hyena_(Crocuta_crocuta).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Spotted_hyena_(Crocuta_crocuta).jpg"
+   }
+  },
+  {
+   "id": "striped-hyena",
+   "name": "Striped hyena",
+   "side": "cat",
+   "family": "Hyaenidae",
+   "fact": "Hyenas branched off the cat-like side of Carnivora. The dog resemblance is pure convergent evolution.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Striped_hyena",
+   "photo": {
+    "stem": "photos/2e705f7e96",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1123,
+     "660": 579
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/2e705f7e96-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 281
+   },
+   "credit": {
+    "artist": "Tisha Mukherjee",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Tisha_Mukherjee\" title=\"User:Tisha Mukherjee\">Tisha Mukherjee</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Striped_hyena_in_Bhigwan_August_2025_by_Tisha_Mukherjee_07_(cropped).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Striped_hyena_in_Bhigwan_August_2025_by_Tisha_Mukherjee_07_(cropped).jpg"
+   }
+  },
+  {
+   "id": "aardwolf",
+   "name": "Aardwolf",
+   "side": "cat",
+   "family": "Hyaenidae",
+   "fact": "A hyena, therefore a cat-like carnivoran, despite the name. It eats up to 300,000 termites a night.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Aardwolf",
+   "photo": {
+    "stem": "photos/46acba2a23",
+    "widths": [
+     660,
+     1213
+    ],
+    "height": {
+     "1213": 724,
+     "660": 394
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/46acba2a23-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 191
+   },
+   "credit": {
+    "artist": "Stefan Haag",
+    "artist_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.inaturalist.org/people/elebew\">Stefan Haag</a>",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution_required": true,
+    "file_name": "Aardwolf,_Buffalo_Springs_National_Park,_Kenya_1_(cropped).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Aardwolf,_Buffalo_Springs_National_Park,_Kenya_1_(cropped).jpg"
+   }
+  },
+  {
+   "id": "meerkat",
+   "name": "Meerkat",
+   "side": "cat",
+   "family": "Herpestidae",
+   "fact": "A mongoose, not a cat, whatever the name says. Sentries use different alarm calls for hawks and for snakes.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Meerkat",
+   "photo": {
+    "stem": "photos/0201557813",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1054,
+     "660": 543
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/0201557813-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 264
+   },
+   "credit": {
+    "artist": "Charles J. Sharp",
+    "artist_html": "<bdi><a href=\"https://www.wikidata.org/wiki/Q54800218\" class=\"extiw\" title=\"d:Q54800218\"><span title=\"Scottish wildlife photographer\">Charles J. Sharp</span></a></bdi>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Meerkat_(Suricata_suricatta)_Tswalu.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_Tswalu.jpg"
+   }
+  },
+  {
+   "id": "banded-mongoose",
+   "name": "Banded mongoose",
+   "side": "cat",
+   "family": "Herpestidae",
+   "fact": "Mongooses are cat-like carnivorans, and the whole pack gives birth on the same night.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Banded_mongoose",
+   "photo": {
+    "stem": "photos/b9b1c0eecb",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1359,
+     "660": 701
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/b9b1c0eecb-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 340
+   },
+   "credit": {
+    "artist": "Axel Tschentscher",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Axel_Tschentscher\" title=\"User:Axel Tschentscher\">Axel Tschentscher</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Banded_Mongoose_Nose_Detail,_crop.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Banded_Mongoose_Nose_Detail,_crop.jpg"
+   }
+  },
+  {
+   "id": "indian-grey-mongoose",
+   "name": "Indian grey mongoose",
+   "side": "cat",
+   "family": "Herpestidae",
+   "fact": "Its acetylcholine receptors are shaped so that cobra venom cannot lock on.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Indian_grey_mongoose",
+   "photo": {
+    "stem": "photos/782ebe91ae",
+    "widths": [
+     660,
+     800
+    ],
+    "height": {
+     "800": 527,
+     "660": 435
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/782ebe91ae-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 211
+   },
+   "credit": {
+    "artist": "J.M.Garg",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:J.M.Garg\" title=\"User:J.M.Garg\">J.M.Garg</a>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "Herpestes_edwardsii_at_Hyderaba.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Herpestes_edwardsii_at_Hyderaba.jpg"
+   }
+  },
+  {
+   "id": "binturong",
+   "name": "Binturong",
+   "side": "cat",
+   "family": "Viverridae",
+   "fact": "Known as the bearcat, it is neither, and its scent glands smell convincingly of hot buttered popcorn.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Binturong",
+   "photo": {
+    "stem": "photos/42190b7146",
+    "widths": [
+     660,
+     800
+    ],
+    "height": {
+     "800": 545,
+     "660": 450
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/42190b7146-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 218
+   },
+   "credit": {
+    "artist": "Tassilo Rau",
+    "artist_html": "<a href=\"https://de.wikipedia.org/wiki/Benutzer:TassiloRau\" class=\"extiw\" title=\"de:Benutzer:TassiloRau\">Tassilo Rau</a>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution_required": true,
+    "file_name": "Binturong_in_Overloon.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Binturong_in_Overloon.jpg"
+   }
+  },
+  {
+   "id": "common-genet",
+   "name": "Common genet",
+   "side": "cat",
+   "family": "Viverridae",
+   "fact": "Looks like a spotted cat but belongs to the civets, and can flatten itself through any gap its head fits.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Common_genet",
+   "photo": {
+    "stem": "photos/1bb3ee55da",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 1707,
+     "660": 880
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/1bb3ee55da-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 427
+   },
+   "credit": {
+    "artist": "Guérin Nicolas ( messages )",
+    "artist_html": "<b><a href=\"//commons.wikimedia.org/wiki/User:Gu%C3%A9rin_Nicolas\" title=\"User:Guérin Nicolas\">Guérin Nicolas</a> <sup>(<a href=\"//commons.wikimedia.org/wiki/User_talk:Gu%C3%A9rin_Nicolas\" title=\"User talk:Guérin Nicolas\">messages</a>)</sup></b>",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": true,
+    "file_name": "Genetta_genetta_felina_(Wroclaw_zoo).JPG",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Genetta_genetta_felina_(Wroclaw_zoo).JPG"
+   }
+  },
+  {
+   "id": "asian-palm-civet",
+   "name": "Asian palm civet",
+   "side": "cat",
+   "family": "Viverridae",
+   "fact": "The animal behind kopi luwak coffee.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/Asian_palm_civet",
+   "photo": {
+    "stem": "photos/21d5c04891",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 950,
+     "660": 490
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/21d5c04891-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 238
+   },
+   "credit": {
+    "artist": "Bernard DUPONT from FRANCE",
+    "artist_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65695019@N07\">Bernard DUPONT</a> from FRANCE",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "attribution_required": true,
+    "file_name": "Common_Palm_Civet_(Paradoxurus_hermaphroditus)_(7781509830).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Common_Palm_Civet_(Paradoxurus_hermaphroditus)_(7781509830).jpg"
+   }
+  },
+  {
+   "id": "african-civet",
+   "name": "African civet",
+   "side": "cat",
+   "family": "Viverridae",
+   "fact": "Its musk was a base note in perfume for centuries.",
+   "tricky": false,
+   "wiki": "https://en.wikipedia.org/wiki/African_civet",
+   "photo": {
+    "stem": "photos/1c7df9e240",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 853,
+     "660": 440
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/1c7df9e240-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 213
+   },
+   "credit": {
+    "artist": "I've Got It On Film!",
+    "artist_html": "I've Got It On Film!",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": true,
+    "file_name": "African civet, South Luangwa National Park (51866143791).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:African_civet,_South_Luangwa_National_Park_(51866143791).jpg"
+   }
+  },
+  {
+   "id": "fossa",
+   "name": "Fossa",
+   "side": "cat",
+   "family": "Eupleridae",
+   "fact": "Madagascar's top predator. Looks like a puma crossed with a mongoose, and mongooses are the closer guess.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Fossa_(animal)",
+   "photo": {
+    "stem": "photos/1166c16f7e",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 968,
+     "660": 499
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/1166c16f7e-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 242
+   },
+   "credit": {
+    "artist": "Ran Kirlian",
+    "artist_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ran_Kirlian&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ran Kirlian (page does not exist)\">Ran Kirlian</a>",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": true,
+    "file_name": "Cryptoprocta_Ferox.JPG",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Cryptoprocta_Ferox.JPG"
+   }
+  },
+  {
+   "id": "african-palm-civet",
+   "name": "African palm civet",
+   "side": "cat",
+   "family": "Nandiniidae",
+   "fact": "The only member of its family. Its lineage split off before every other cat-like carnivoran.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/African_palm_civet",
+   "photo": {
+    "stem": "photos/95c559911f",
+    "widths": [
+     660,
+     1158
+    ],
+    "height": {
+     "1158": 1656,
+     "660": 944
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/95c559911f-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 458
+   },
+   "credit": {
+    "artist": "Thomas Galewski",
+    "artist_html": "Thomas Galewski",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution_required": true,
+    "file_name": "Nandinia_binotata,_crop.jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Nandinia_binotata,_crop.jpg"
+   }
+  },
+  {
+   "id": "banded-linsang",
+   "name": "Banded linsang",
+   "side": "cat",
+   "family": "Prionodontidae",
+   "fact": "The closest living relative of the true cats, sitting in a family of its own.",
+   "tricky": true,
+   "wiki": "https://en.wikipedia.org/wiki/Banded_linsang",
+   "photo": {
+    "stem": "photos/212008551d",
+    "widths": [
+     660,
+     1280
+    ],
+    "height": {
+     "1280": 684,
+     "660": 353
+    },
+    "formats": [
+     "webp"
+    ],
+    "thumb": "photos/212008551d-320.webp",
+    "thumb_width": 320,
+    "thumb_height": 171
+   },
+   "credit": {
+    "artist": "Daderot",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Daderot\" title=\"User:Daderot\">Daderot</a>",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "attribution_required": false,
+    "file_name": "Prionodon_linsang_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa,_Italy_-_DSC02704.JPG",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Prionodon_linsang_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa,_Italy_-_DSC02704.JPG"
+   }
+  }
+ ]
+}

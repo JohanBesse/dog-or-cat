@@ -1,0 +1,234 @@
+/* Dog or Cat? -- the desktop game's palette, with two contrast fixes:
+   the credit grey and the cat button's subtitle both fell below WCAG AA. */
+
+:root {
+  --bg: #12151c;
+  --panel: #1a1f2b;
+  --ink: #eef1f7;
+  --muted: #8792a8;
+  --faint: #76809a;          /* was #5b6479 on the desktop: 3.1:1 */
+  --dog: #e0913a;
+  --dog-ink: #2a2110;
+  --cat: #7f7ae0;
+  --cat-ink: #1a1636;        /* was #231f4a: 4.1:1 */
+  --good: #54c98a;
+  --bad: #e8636b;
+  --start: #2f8f5b;
+  --serif: ui-serif, Charter, "Bitstream Charter", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --dock-h: 16rem;
+}
+@media (min-width: 720px) { :root { --dock-h: 14.5rem; } }
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.5 var(--sans);
+  -webkit-text-size-adjust: 100%;
+}
+
+#app { height: 100%; }
+.screen { height: 100%; }
+.screen[hidden] { display: none; }
+
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
+
+/* ----------------------------------------------------------- shared bits */
+
+.wordmark {
+  font: 700 clamp(1.9rem, 7vw, 2.6rem)/1.1 var(--serif);
+  margin: 0 0 .35rem;
+}
+.tagline { margin: 0 0 1rem; color: var(--muted); font-size: .95rem; }
+.keyhint { color: var(--faint); font-size: .8rem; margin: .8rem 0 0; }
+.note { color: var(--faint); font-size: .78rem; margin: 1.4rem 0 0; max-width: 34rem; }
+
+.big-button {
+  font: 700 1.4rem/1 var(--sans);
+  letter-spacing: .05em;
+  color: #0f2418;
+  background: var(--start);
+  border: 0;
+  border-radius: 12px;
+  padding: 1.1rem 3.5rem;
+  min-height: 3.5rem;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.next-button {
+  font: 700 1rem/1 var(--sans);
+  color: var(--ink);
+  background: #2b3346;
+  border: 0;
+  border-radius: 10px;
+  padding: .85rem 1.4rem;
+  min-height: 2.9rem;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.next-button.ghost { background: transparent; color: var(--muted); }
+@media (hover: hover) {
+  .big-button:hover, .next-button:hover { filter: brightness(1.18); }
+}
+.big-button:active, .next-button:active { transform: scale(.985); }
+
+.site-footer { text-align: center; padding: 1rem 0 calc(1rem + env(safe-area-inset-bottom)); }
+.site-footer a, .credit a { color: var(--faint); font-size: .78rem; }
+
+/* ----------------------------------------------------------- start */
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: max(1.5rem, env(safe-area-inset-top)) 1.25rem 0;
+  overflow-y: auto;
+}
+.start-inner { max-width: 40rem; margin: auto; padding: 1.5rem 0; }
+.blurb { font-family: var(--serif); font-size: 1.05rem; text-align: left; margin: 0 0 1.4rem; }
+
+.branches { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin: 0 0 1.4rem; }
+.branch {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: .9rem .6rem 1rem;
+  font-size: .82rem;
+  line-height: 1.45;
+}
+.branch b { display: block; font: 700 1.05rem/1.2 var(--serif); margin-bottom: .1rem; }
+.branch i { display: block; color: var(--muted); font-size: .75rem; margin-bottom: .5rem; }
+.branch-dog b { color: var(--dog); }
+.branch-cat b { color: var(--cat); }
+
+.start-button { margin-top: .4rem; }
+
+/* ----------------------------------------------------------- play */
+
+.play {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto var(--dock-h);
+  gap: .5rem;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: max(.9rem, env(safe-area-inset-top)) 1rem
+           calc(.9rem + env(safe-area-inset-bottom));
+}
+
+.hud { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.hud-title { font: 700 1.3rem/1.2 var(--serif); margin: 0; }
+.hud-stats { margin: 0; color: var(--muted); font-size: .85rem; font-variant-numeric: tabular-nums; }
+.hud-stats span + span::before { content: " • "; color: var(--faint); }
+.prompt { margin: 0; color: var(--muted); font-size: .85rem; }
+
+.stage {
+  background: var(--panel);
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  min-height: 0;
+  /* The same 3:2 frame the desktop game uses, centred in whatever height is
+     going spare, so the panel never towers over the photograph inside it. */
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+#photo { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+#photo[hidden] { display: none; }
+.stage-msg { color: var(--muted); font-size: .9rem; margin: 0; padding: 1rem; text-align: center; }
+.stage.loading { animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 50% { background: #222839; } }
+
+.credit {
+  margin: 0;
+  min-height: 1.15rem;
+  text-align: center;
+  font-size: .72rem;
+  line-height: 1.15rem;
+  color: var(--faint);
+  visibility: hidden;         /* keeps the row's height, hides it from AT too */
+}
+.credit.shown { visibility: visible; }
+
+.dock { display: grid; min-height: 0; }
+.dock > .panel { grid-area: 1 / 1; }
+.dock > .panel[hidden] { display: none; }
+
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+.choice {
+  display: grid;
+  place-content: center;
+  gap: .25rem;
+  min-height: 5.5rem;
+  padding: .9rem .5rem;
+  border: 0;
+  border-radius: 12px;
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.choice-word { font: 700 1.5rem/1 var(--sans); letter-spacing: .05em; }
+.choice-sub { font-size: .78rem; font-style: italic; }
+.choice-dog { background: var(--dog); color: var(--dog-ink); }
+.choice-cat { background: var(--cat); color: var(--cat-ink); }
+.choice[disabled] { opacity: .45; cursor: default; }
+@media (hover: hover) { .choice:not([disabled]):hover { filter: brightness(1.15); } }
+.choice:not([disabled]):active { transform: scale(.985); }
+
+.verdict { font: 700 1.3rem/1.2 var(--serif); margin: 0 0 .3rem; }
+.verdict.correct { color: var(--good); }
+.verdict.wrong { color: var(--bad); }
+.taxon { margin: 0 0 .6rem; color: var(--muted); font-size: .9rem; }
+.fact { margin: 0; font-family: var(--serif); min-height: 4.5em; }
+#panel-reveal .next-button { margin-top: .4rem; }
+
+/* ----------------------------------------------------------- results */
+
+.results { display: flex; flex-direction: column; overflow-y: auto; padding: max(1.5rem, env(safe-area-inset-top)) 1.25rem 0; }
+.results-inner { max-width: 34rem; margin: auto; width: 100%; }
+.score-line { font: 700 1.6rem/1.2 var(--serif); margin: 0 0 .2rem; }
+.best-streak { margin: 0 0 1rem; color: var(--muted); }
+.remark { font-family: var(--serif); font-size: 1.05rem; margin: 0 0 1.4rem; }
+.missed-head { color: var(--muted); font-size: .85rem; margin: 0 0 .4rem; }
+.missed { margin: 0 0 1.6rem; padding-left: 1.2rem; }
+.missed li { margin-bottom: .3rem; }
+.missed a { color: var(--ink); }
+.missed .taxon-inline { color: var(--muted); font-size: .85rem; }
+.results-buttons { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
+.share-button { padding: 1rem 2rem; font-size: 1.1rem; }
+
+/* ----------------------------------------------------------- motion */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  .stage.loading { animation: none; }
+}
+
+/* ----------------------------------------------------------- credits page */
+
+.page { background: var(--bg); }
+.prose { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+.prose h1 { font: 700 2rem/1.2 var(--serif); }
+.prose a { color: var(--ink); }
+.credits { list-style: none; margin: 2rem 0; padding: 0; }
+.credits li { display: flex; gap: 1rem; align-items: center; margin-bottom: 1.1rem; }
+.credits img { width: 110px; height: 74px; object-fit: cover;
+               border-radius: 8px; flex: none; }
+.credits div { font-size: .85rem; color: var(--muted); }
+.credits b { color: var(--ink); font-size: .95rem; }
+.credits a { color: var(--faint); }
+.back { margin-top: 2rem; }

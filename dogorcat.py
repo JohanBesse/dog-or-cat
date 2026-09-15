@@ -262,16 +262,28 @@ ROUNDS = 10
 
 CACHE_DIR = Path.home() / ".cache" / "dog-or-cat"
 URL_CACHE = CACHE_DIR / "urls.json"
-USER_AGENT = "DogOrCat/1.0 (local single-player game)"
+NAME_CACHE = CACHE_DIR / "names.json"
+META_CACHE = CACHE_DIR / "meta.json"
+# Wikimedia's user-agent policy asks for a contact address and will rate-limit
+# or block clients that do not identify themselves.
+# https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
+USER_AGENT = ("DogOrCat/1.0 (https://dogorcat.net; besse@birdsview.no) "
+              "python-requests")
 API = "https://en.wikipedia.org/w/api.php"
 
 # Wikimedia only serves a fixed set of thumbnail widths to direct requests, so
 # the width is left to the API, which rounds up to the nearest standard size.
 # See https://www.mediawiki.org/wiki/Common_thumbnail_sizes
 IMAGE_WIDTH = 960
+WEB_IMAGE_WIDTH = 1280   # what the website exports at; also a standard size
 BATCH = 50               # titles per API query
 MIN_REQUEST_GAP = 0.6    # seconds between requests, to stay a polite client
 RETRIES = 5
+
+# Asking for only the fields we use keeps the imageinfo response small; the
+# unfiltered extmetadata block also carries descriptions, dates and categories.
+EXTMETA_FIELDS = ("Artist", "LicenseShortName", "LicenseUrl", "Credit",
+                  "AttributionRequired", "Restrictions", "Copyrighted")
 
 
 class PhotoLibrary:
@@ -288,6 +300,14 @@ class PhotoLibrary:
             self._urls = json.loads(URL_CACHE.read_text())
         except Exception:
             self._urls = {}
+        try:
+            self._names = json.loads(NAME_CACHE.read_text())
+        except Exception:
+            self._names = {}
+        try:
+            self._meta = json.loads(META_CACHE.read_text())
+        except Exception:
+            self._meta = {}
 
     # -- http --------------------------------------------------------------
     def _throttle(self):
@@ -330,6 +350,7 @@ class PhotoLibrary:
     def _save_urls(self):
         try:
             URL_CACHE.write_text(json.dumps(self._urls, indent=1))
+            NAME_CACHE.write_text(json.dumps(self._names, indent=1))
         except OSError:
             pass
 
@@ -341,16 +362,17 @@ class PhotoLibrary:
         whole game under a couple of API calls and well clear of rate limits.
         """
         with self._lock:
-            missing = [t for t in dict.fromkeys(titles) if t not in self._urls]
+            missing = [t for t in dict.fromkeys(titles)
+                       if t not in self._urls or t not in self._names]
         if not missing:
             return
 
-        found = {}
+        found, names = {}, {}
         for start in range(0, len(missing), BATCH):
             chunk = missing[start:start + BATCH]
             r = self._get(API, params={
                 "action": "query", "format": "json", "formatversion": "2",
-                "prop": "pageimages", "piprop": "thumbnail",
+                "prop": "pageimages", "piprop": "thumbnail|name",
                 "pithumbsize": str(IMAGE_WIDTH), "redirects": "1",
                 "titles": "|".join(chunk),
             })
@@ -372,10 +394,17 @@ class PhotoLibrary:
                 source = (page or {}).get("thumbnail", {}).get("source")
                 if source:
                     found[title] = source.split("?")[0]
+                # The API knows the real Commons filename. Deriving it from the
+                # URL instead goes wrong whenever the original is narrower than
+                # the width we asked for, because then there is no thumbnail
+                # path and no "960px-" prefix to strip.
+                if (page or {}).get("pageimage"):
+                    names[title] = page["pageimage"]
 
-        if found:
+        if found or names:
             with self._lock:
                 self._urls.update(found)
+                self._names.update(names)
                 self._save_urls()
 
     def resolve(self, title):
@@ -413,9 +442,98 @@ class PhotoLibrary:
         if image.mode not in ("RGB", "L"):
             image = image.convert("RGB")
 
-        filename = url.rsplit("/", 1)[-1]
-        filename = re.sub(r"^\d+px-", "", filename)
-        return image, "Photo: Wikimedia Commons / " + filename
+        return image, "Photo: Wikimedia Commons / " + self.filename(title)
+
+    def filename(self, title):
+        """The Commons filename behind an article's photo."""
+        with self._lock:
+            name = self._names.get(title)
+        if name:
+            return name
+        # Fallback for a cache written before filenames were recorded.
+        url = self.resolve(title) or ""
+        return re.sub(r"^\d+px-", "", url.rsplit("/", 1)[-1])
+
+    # -- licence metadata --------------------------------------------------
+    def metadata_many(self, titles, refresh=False, names=None):
+        """
+        Return {article title: raw credit fields} for many articles at once.
+
+        The desktop game only ever needed the photo. A public web page also
+        has to say who took it and under what licence, which the CC licences
+        require and the game's filename-only credit does not satisfy.
+
+        Commons files are asked for through en.wikipedia.org rather than
+        Commons itself: the page comes back flagged missing, because there is
+        no *local* file, but with a full imageinfo block for the shared one.
+        Keeping to one host means one session and one throttle.
+        """
+        names = names or {}
+        # An overridden species never needs the pageimages lookup at all: the
+        # caller has already named the file it wants.
+        lookup = [t for t in dict.fromkeys(titles) if t not in names]
+        if lookup:
+            self.resolve_many(lookup)
+        wanted = {t: names.get(t) or self.filename(t)
+                  for t in dict.fromkeys(titles)}
+        wanted = {t: n for t, n in wanted.items() if n}
+
+        todo = sorted({n for n in wanted.values()
+                       if refresh or "thumb_url" not in self._meta.get(n, {})})
+        fetched = {}
+        for start in range(0, len(todo), BATCH):
+            chunk = todo[start:start + BATCH]
+            r = self._get(API, params={
+                "action": "query", "format": "json", "formatversion": "2",
+                "prop": "imageinfo", "iiprop": "extmetadata|url|size",
+                "iiurlwidth": str(WEB_IMAGE_WIDTH),
+                "iiextmetadatafilter": "|".join(EXTMETA_FIELDS),
+                "titles": "|".join("File:" + n for n in chunk),
+            })
+            data = r.json().get("query", {})
+            aliases = {e["from"]: e["to"] for e in data.get("normalized", [])}
+            pages = {p["title"]: p for p in data.get("pages", [])}
+
+            for name in chunk:
+                key = "File:" + name
+                page = pages.get(aliases.get(key, key))
+                info = (page or {}).get("imageinfo") or [{}]
+                meta = info[0].get("extmetadata", {})
+
+                def field(key):
+                    return (meta.get(key) or {}).get("value", "")
+
+                fetched[name] = {
+                    "file_name": name,
+                    "file_page": info[0].get("descriptionurl", ""),
+                    "repository": (page or {}).get("imagerepository", ""),
+                    "artist_html": field("Artist"),
+                    "license": field("LicenseShortName"),
+                    "license_url": field("LicenseUrl"),
+                    "credit_html": field("Credit"),
+                    "attribution_required": field("AttributionRequired"),
+                    "restrictions": field("Restrictions"),
+                    "copyrighted": field("Copyrighted"),
+                    "width": info[0].get("width", 0),
+                    "height": info[0].get("height", 0),
+                    # A render at the width the website wants, which the API
+                    # clamps to the original when the original is smaller.
+                    "thumb_url": info[0].get("thumburl", ""),
+                    "thumb_width": info[0].get("thumbwidth", 0),
+                    "thumb_height": info[0].get("thumbheight", 0),
+                }
+
+        if fetched:
+            with self._lock:
+                self._meta.update(fetched)
+                try:
+                    META_CACHE.write_text(json.dumps(self._meta, indent=1))
+                except OSError:
+                    pass
+
+        with self._lock:
+            return {t: dict(self._meta[n]) for t, n in wanted.items()
+                    if n in self._meta}
 
 
 # --------------------------------------------------------------------------

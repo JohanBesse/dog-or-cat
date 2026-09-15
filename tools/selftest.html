@@ -1,0 +1,94 @@
+<!doctype html><meta charset="utf-8"><title>Dog or Cat? — self-test</title>
+<body><pre id="out" style="font:22px/1.4 monospace;color:#0f0;background:#000;padding:20px">running</pre>
+<script type="module">
+import * as game from '../docs/js/game.js';
+import { pickWidth, srcFor } from '../docs/js/photos.js';
+const log = [];
+const ok = (name, cond) => log.push((cond ? 'PASS  ' : 'FAIL  ') + name);
+const data = await fetch('../docs/data/species.json').then(r => r.json());
+// Photo paths in species.json are relative to the site root; this page is
+// served from /tools/, so they need the prefix here (the game does not).
+const all = data.species.map(sp => Object.assign({}, sp, {
+  photo: Object.assign({}, sp.photo, { stem: '../docs/' + sp.photo.stem }),
+}));
+
+ok('59 species loaded', all.length === 59);
+ok('rounds is 10', data.rounds === 10);
+
+let dogCounts = new Set(), sizes = new Set(), dupes = 0;
+for (let i = 0; i < 500; i++) {
+  const st = game.newState(all, data.rounds);
+  dogCounts.add(st.plan.filter(p => p.species.side === 'dog').length);
+  sizes.add(st.plan.length);
+  if (new Set(st.plan.map(p => p.species.id)).size !== 10) dupes++;
+  ok('spares keep the rest', st.spares.length === all.length - 10);
+  log.length = Math.min(log.length, 400);
+}
+ok('always 5 dogs in 500 deals', dogCounts.size === 1 && dogCounts.has(5));
+ok('always 10 rounds', sizes.size === 1 && sizes.has(10));
+ok('no duplicate species in a game', dupes === 0);
+
+// scoring
+const st = game.newState(all, 10);
+st.plan.forEach(s => { s.status = 'ready'; });
+let r = game.answer(st, st.plan[0].species.side);
+ok('correct guess scores', r.correct && st.score === 1 && st.streak === 1);
+ok('headline reads Correct', r.headline.startsWith('Correct — '));
+ok('taxon line shape', /^(Caniformia|Feliformia) → \w+  \((dog|cat)-like\)$/.test(r.taxon));
+ok('second answer ignored', game.answer(st, 'dog') === null);
+st.index = 1; st.answered = false;
+const wrongSide = st.plan[1].species.side === 'dog' ? 'cat' : 'dog';
+r = game.answer(st, wrongSide);
+ok('wrong guess breaks streak', !r.correct && st.streak === 0 && st.missed.length === 1);
+ok('best streak remembered', st.bestStreak === 1);
+st.index = 2; st.answered = false;
+st.plan[2].status = 'pending';
+ok('cannot answer an unloaded round', game.answer(st, 'dog') === null);
+
+ok('remark 100', game.remark(100).startsWith('Flawless'));
+ok('remark 70', game.remark(70).startsWith('Respectable'));
+ok('remark 0', game.remark(0).startsWith('In fairness'));
+ok('percent', game.percent({score: 7, rounds: 10}) === 70);
+
+// photos
+ok('pickWidth small screen', pickWidth([320,660,1280], 390, 1) === 660);
+ok('pickWidth retina phone', pickWidth([320,660,1280], 390, 3) === 1280);
+ok('srcFor builds a path', /photos\/[0-9a-f]{10}-\d+\.webp$/.test(srcFor(all[0], 660)));
+
+// spoiler check: no species name anywhere in a photo URL
+const leaks = all.filter(s => {
+  const u = s.photo.stem.toLowerCase();
+  return s.name.toLowerCase().split(/\s+/).some(word => word.length > 3 && u.includes(word));
+});
+ok('no species name leaks into a photo URL', leaks.length === 0);
+ok('every species has a photographer', all.every(s => s.credit.artist));
+ok('every species has a licence', all.every(s => s.credit.license));
+ok('licences are free', all.every(s => /^(CC|Public domain)/.test(s.credit.license)));
+
+// A photo that will not load must be replaced by a spare from the same side,
+// so a game still deals five dog-like and five cat-like.
+{
+  const { ensure } = await import('../docs/js/photos.js');
+  const st = game.newState(all, 10);
+  const broken = st.plan[0].species;
+  st.plan[0].species = Object.assign({}, broken,
+    { photo: Object.assign({}, broken.photo, { stem: '../docs/photos/does-not-exist' }) });
+  await ensure(st, 0, 660);
+  ok('broken photo falls back to a spare', st.plan[0].status === 'ready');
+  ok('the spare is on the same side', st.plan[0].species.side === broken.side);
+  ok('the spare is a different animal', st.plan[0].species.id !== broken.id);
+  ok('the spare leaves the spare pool', !st.spares.includes(st.plan[0].species));
+
+  const good = game.newState(all, 10);
+  const intended = good.plan[0].species.id;
+  await ensure(good, 0, 660);
+  ok('a working photo is kept', good.plan[0].species.id === intended
+     && good.plan[0].status === 'ready');
+  ok('a working round loads its own photo', good.spares.length === all.length - 10);
+}
+
+const fails = log.filter(l => l.startsWith('FAIL'));
+document.getElementById('out').textContent =
+  (fails.length ? fails.join('\n') : 'ALL PASS') +
+  `\n${log.length - fails.length} passed, ${fails.length} failed`;
+</script>

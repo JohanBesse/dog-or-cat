@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dog or Cat?</title>
+<meta name="description" content="A photo of a carnivoran, and one guess: is it on the dog-like branch or the cat-like one? Seals are dog-like. Hyenas are cat-like. It is harder than it sounds.">
+<meta name="theme-color" content="#12151c">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/app.css">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dogorcat.net/">
+<meta property="og:title" content="Dog or Cat?">
+<meta property="og:description" content="Caniformia or Feliformia? Seals are dog-like. Hyenas are cat-like. Ten photos, ten guesses.">
+<meta property="og:image" content="https://dogorcat.net/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" as="fetch" href="data/species.json" crossorigin>
+</head>
+<body>
+<main id="app">
+
+  <!-- ------------------------------------------------- start -->
+  <section id="screen-start" class="screen start" tabindex="-1">
+    <div class="start-inner">
+      <h1 class="wordmark">Dog or Cat?</h1>
+      <p class="tagline">Caniformia or Feliformia — which branch of Carnivora?</p>
+      <p class="blurb">
+        The order Carnivora split in two roughly 50 million years ago, long
+        before anything that looked like a dog or a cat existed. Every
+        carnivoran alive sits on one side of that split, and the two sides are
+        far wider than their nicknames suggest.
+      </p>
+      <div class="branches">
+        <div class="branch branch-dog">
+          <b>Caniformia</b><i>the dog-like half</i>
+          <span>dogs · bears · seals · walruses<br>otters · raccoons · skunks</span>
+        </div>
+        <div class="branch branch-cat">
+          <b>Feliformia</b><i>the cat-like half</i>
+          <span>cats · hyenas · mongooses<br>meerkats · civets · genets</span>
+        </div>
+      </div>
+      <p class="tagline">A photo, then one guess. The traps are the point.</p>
+      <button class="big-button start-button" data-action="start">START</button>
+      <p class="keyhint">or press space</p>
+      <p class="note">Ten rounds. This one is played by eye — there is no way
+        to win it without seeing the photographs.</p>
+    </div>
+    <footer class="site-footer"><a href="credits.html">Photo credits</a></footer>
+  </section>
+
+  <!-- ------------------------------------------------- play -->
+  <section id="screen-play" class="screen play" tabindex="-1" hidden>
+    <header class="hud">
+      <h1 class="hud-title">Dog or Cat?</h1>
+      <p class="hud-stats">
+        <span id="hud-round">Round 1/10</span>
+        <span id="hud-score">score 0</span>
+        <span id="hud-streak" hidden></span>
+      </p>
+    </header>
+    <p class="prompt" id="prompt">Caniformia or Feliformia — which branch of Carnivora?</p>
+
+    <div class="stage" id="stage">
+      <img id="photo" alt="" hidden>
+      <p class="stage-msg" id="stage-msg">Fetching a photo…</p>
+    </div>
+
+    <p class="credit" id="credit"><span id="credit-text"></span></p>
+
+    <div class="dock">
+      <div class="panel" id="panel-choices">
+        <div class="choices">
+          <button class="choice choice-dog" id="btn-dog" data-action="dog">
+            <span class="choice-word">DOG</span>
+            <span class="choice-sub">Caniformia — dog-like</span>
+          </button>
+          <button class="choice choice-cat" id="btn-cat" data-action="cat">
+            <span class="choice-word">CAT</span>
+            <span class="choice-sub">Feliformia — cat-like</span>
+          </button>
+        </div>
+        <p class="keyhint">keys: ← or D for dog &nbsp;•&nbsp; → or C for cat</p>
+      </div>
+
+      <div class="panel" id="panel-reveal" hidden aria-live="polite">
+        <p class="verdict" id="verdict"></p>
+        <p class="taxon" id="taxon"></p>
+        <p class="fact" id="fact"></p>
+        <button class="next-button" id="next" data-action="next">Next →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------- results -->
+  <section id="screen-results" class="screen results" tabindex="-1" hidden>
+    <div class="results-inner">
+      <h1 class="wordmark">Game over</h1>
+      <p class="score-line" id="score-line"></p>
+      <p class="best-streak" id="best-streak"></p>
+      <p class="remark" id="remark"></p>
+      <div id="missed-block" hidden>
+        <p class="missed-head">Worth a second look:</p>
+        <ol class="missed" id="missed"></ol>
+      </div>
+      <div class="results-buttons">
+        <button class="big-button share-button" id="share" data-action="share">Share result</button>
+        <button class="next-button" data-action="again">Play again</button>
+        <button class="next-button ghost" data-action="home">Back to start</button>
+      </div>
+      <p class="keyhint" id="share-said" hidden>Copied to the clipboard.</p>
+    </div>
+    <footer class="site-footer"><a href="credits.html">Photo credits</a></footer>
+  </section>
+
+</main>
+<script type="module" src="js/ui.js"></script>
+</body>
+</html>

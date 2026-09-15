@@ -77,7 +77,7 @@ immutable, which is the only cache control GitHub Pages allows.
 ## Photographs
 
 Every photograph comes from Wikimedia Commons and is used under its own
-licence. 53 of the 59 require attribution, which is what `docs/credits.html`
+licence. 52 of the 59 require attribution, which is what `docs/credits.html`
 is for. The build refuses to publish any image that is not clearly freely
 licensed, so adding a species can fail the build rather than quietly shipping
 something unlicensed.

@@ -87,6 +87,21 @@ ok('licences are free', all.every(s => /^(CC|Public domain)/.test(s.credit.licen
   ok('a working round loads its own photo', good.spares.length === all.length - 10);
 }
 
+// The share text must carry no spoilers: no animal names, no families.
+{
+  const { shareText } = await import('../docs/js/share.js');
+  const st = game.newState(all, 10);
+  st.score = 7; st.bestStreak = 4;
+  st.results = [true,true,false,true,true,true,false,true,true,false];
+  const text = shareText(st);
+  ok('share text has the score', text.startsWith('Dog or Cat? 7/10'));
+  ok('share text has ten squares', (text.match(/🟩|🟥/g) || []).length === 10);
+  ok('share text ends with the domain', text.trim().endsWith('dogorcat.net'));
+  ok('share text has no best streak', !/streak/i.test(text));
+  ok('share text names no animal', !all.some(sp => text.includes(sp.name)));
+  ok('share text is three lines', text.split('\n').length === 3);
+}
+
 const fails = log.filter(l => l.startsWith('FAIL'));
 document.getElementById('out').textContent =
   (fails.length ? fails.join('\n') : 'ALL PASS') +

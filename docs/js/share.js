@@ -6,7 +6,7 @@ export function shareText(state) {
   return [
     `Dog or Cat? ${state.score}/${state.rounds}`,
     grid,
-    `best streak ${state.bestStreak} · dogorcat.net`,
+    'dogorcat.net',
   ].join('\n');
 }
 

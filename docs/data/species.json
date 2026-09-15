@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T21:11:27Z",
+ "generated": "2026-09-15T21:17:34Z",
  "rounds": 10,
  "count": 59,
  "species": [
@@ -292,30 +292,30 @@
    "tricky": true,
    "wiki": "https://en.wikipedia.org/wiki/Raccoon_dog",
    "photo": {
-    "stem": "photos/49ae8e6e2f",
+    "stem": "photos/6f38cb322c",
     "widths": [
      660,
      1280
     ],
     "height": {
-     "1280": 1870,
-     "660": 964
+     "1280": 929,
+     "660": 479
     },
     "formats": [
      "webp"
     ],
-    "thumb": "photos/49ae8e6e2f-320.webp",
+    "thumb": "photos/6f38cb322c-320.webp",
     "thumb_width": 320,
-    "thumb_height": 468
+    "thumb_height": 232
    },
    "credit": {
-    "artist": "Доктор рукиноги KKPCW",
-    "artist_html": "<ul><li><a href=\"//commons.wikimedia.org/wiki/User:%D0%94%D0%BE%D0%BA%D1%82%D0%BE%D1%80_%D1%80%D1%83%D0%BA%D0%B8%D0%BD%D0%BE%D0%B3%D0%B8\" title=\"User:Доктор рукиноги\">Доктор рукиноги</a></li>\n<li><a href=\"//commons.wikimedia.org/wiki/User:KKPCW\" title=\"User:KKPCW\">KKPCW</a></li></ul>",
+    "artist": "Ryzhkov Sergey",
+    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Ryzhkov_Sergey\" title=\"User:Ryzhkov Sergey\">Ryzhkov Sergey</a>",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "attribution_required": true,
-    "file_name": "Nyctereutes.png",
-    "file_page": "https://commons.wikimedia.org/wiki/File:Nyctereutes.png"
+    "file_name": "Єнотовидний собака (Nyctereutes procyonoides).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:%D0%84%D0%BD%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0_(Nyctereutes_procyonoides).jpg"
    }
   },
   {
@@ -1762,30 +1762,30 @@
    "tricky": false,
    "wiki": "https://en.wikipedia.org/wiki/Banded_mongoose",
    "photo": {
-    "stem": "photos/b9b1c0eecb",
+    "stem": "photos/8037a1c1fe",
     "widths": [
      660,
      1280
     ],
     "height": {
-     "1280": 1359,
-     "660": 701
+     "1280": 853,
+     "660": 440
     },
     "formats": [
      "webp"
     ],
-    "thumb": "photos/b9b1c0eecb-320.webp",
+    "thumb": "photos/8037a1c1fe-320.webp",
     "thumb_width": 320,
-    "thumb_height": 340
+    "thumb_height": 213
    },
    "credit": {
-    "artist": "Axel Tschentscher",
-    "artist_html": "<a href=\"//commons.wikimedia.org/wiki/User:Axel_Tschentscher\" title=\"User:Axel Tschentscher\">Axel Tschentscher</a>",
+    "artist": "Charles J. Sharp",
+    "artist_html": "<bdi><a href=\"https://www.wikidata.org/wiki/Q54800218\" class=\"extiw\" title=\"d:Q54800218\"><span title=\"Scottish wildlife photographer\">Charles J. Sharp</span></a></bdi>",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "attribution_required": true,
-    "file_name": "Banded_Mongoose_Nose_Detail,_crop.jpg",
-    "file_page": "https://commons.wikimedia.org/wiki/File:Banded_Mongoose_Nose_Detail,_crop.jpg"
+    "file_name": "Banded mongoose (Mungos mungo).jpg",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Banded_mongoose_(Mungos_mungo).jpg"
    }
   },
   {
